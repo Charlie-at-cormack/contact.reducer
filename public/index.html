@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domain Move · Cormack</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23487fff'/%3E%3Cpath d='M9 16h11m-4-5 5 5-5 5' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="vendor/remixicon/css/remixicon.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <aside class="side" id="side"></aside>
+  <main class="main">
+    <header class="top">
+      <button class="hdr-btn" data-act="side-toggle" title="Show or hide the menu"><i class="ri-menu-line"></i></button>
+      <div class="ttl"><h1 id="title">Dashboard</h1><div class="crumb" id="crumb">Home / Dashboard</div></div>
+      <span id="topPill"></span>
+      <div class="search">
+        <i class="ri-search-line" aria-hidden="true"></i>
+        <input id="q" type="search" placeholder="Search domains, IPs, contracts, notes…  ( / )" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="top-actions" id="topActions"></div>
+    </header>
+    <section class="view" id="view"></section>
+  </main>
+  <div class="drawer" id="drawer" hidden></div>
+  <div class="modal-wrap" id="modal" hidden></div>
+  <div class="toasts" id="toasts"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

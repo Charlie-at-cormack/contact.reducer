@@ -1,0 +1,6 @@
+# Live data (store.json, backups, review passwords and sessions) is written by the app on each machine. Never commit it.
+/data/
+node_modules/
+.env
+._*
+.DS_Store
